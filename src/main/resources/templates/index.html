@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Product Sale</title>
+  </head>
+  <body>
+    <h1>List of Products</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+      <tr th:each="product : ${products}">
+        <td th:text="${product.identifier}"></td>
+        <td th:text="${product.code}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.description}"></td>
+        <td>
+          <a th:href="@{|/edit-product/${product.identifier}|}">Edit</a> |
+          <a th:href="@{|/delete-product/${product.identifier}|}">Delete</a>
+        </td>
+      </tr>
+    </table>
+    <a class="btn" href="/add-product">Add New Product</a>
+  </body>
+</html>
