@@ -1,9 +1,13 @@
 package com.example.productsale.model;
 
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
 
+
 public class Product {
+
+ 
     private int identifier;
 
     @NotBlank(message = "Code is mandatory")
