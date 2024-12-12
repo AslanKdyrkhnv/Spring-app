@@ -1,7 +1,8 @@
 com\example\productsale\controller\ProductController.class
 com\example\productsale\model\Product.class
-com\example\productsale\model\PerishableProduct.class
+com\example\productsale\repository\ProductRepository.class
 com\example\productsale\service\ProductService.class
 com\example\productsale\model\OversizedProduct.class
-com\example\productsale\ProductSaleApplication.class
 com\example\productsale\model\FragileProduct.class
+com\example\productsale\model\PerishableProduct.class
+com\example\productsale\ProductSaleApplication.class
